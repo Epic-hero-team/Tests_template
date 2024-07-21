@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 18146753}
   - component: {fileID: 18146752}
   m_Layer: 5
-  m_Name: Noob (3)
+  m_Name: Answer 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 0}
+    m_NormalColor: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 0}
     m_HighlightedColor: {r: 0.48584908, g: 0.8163037, b: 1, a: 0.78431374}
     m_PressedColor: {r: 0.75, g: 1, b: 0.99793386, a: 0.78431374}
     m_SelectedColor: {r: 0.0047169924, g: 0.5474581, b: 1, a: 1}
@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 18146753}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 182075060}
+        m_TargetAssemblyTypeName: GameSceneController, Assembly-CSharp
+        m_MethodName: AnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &18146753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +268,7 @@ GameObject:
   - component: {fileID: 31803536}
   - component: {fileID: 31803535}
   m_Layer: 5
-  m_Name: Noob (2)
+  m_Name: Answer 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,7 +315,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9843137, g: 0.2784314, b: 0.2784314, a: 0}
+    m_NormalColor: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 0}
     m_HighlightedColor: {r: 0.48584908, g: 0.8163037, b: 1, a: 0.78431374}
     m_PressedColor: {r: 0.75, g: 1, b: 0.99793386, a: 0.78431374}
     m_SelectedColor: {r: 0.0047169924, g: 0.5474581, b: 1, a: 1}
@@ -325,7 +337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 31803536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 182075060}
+        m_TargetAssemblyTypeName: GameSceneController, Assembly-CSharp
+        m_MethodName: AnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &31803536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +522,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65938830}
   m_CullTransparentMesh: 1
+--- !u!1 &182075058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182075059}
+  - component: {fileID: 182075060}
+  m_Layer: 0
+  m_Name: Game Scene Mananger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182075059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182075058}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 409.8956, y: 277.67255, z: -0.00943589}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182075060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182075058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d28fb403ab53542bd7fe2a400adc0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  askText: {fileID: 1595423101}
+  countTxt: {fileID: 1647397531}
+  gameState: {fileID: 855388248}
+  buttonsTexts:
+  - {fileID: 1722383697}
+  - {fileID: 1943396204}
+  - {fileID: 481878899}
+  - {fileID: 65938832}
+  asksList:
+  - gameState: 0
+    asksAndAnswers:
+    - ask: 1 ask
+      answers:
+      - 111
+      - 222
+      - 333
+      - 444
+      trueAnswer: 2
+    - ask: 2 ask
+      answers:
+      - 11
+      - 22
+      - 33
+      - 44
+      trueAnswer: 4
+  - gameState: 1
+    asksAndAnswers:
+    - ask: 1 ask
+      answers:
+      - 1
+      - 2
+      - 3
+      - 4
+      trueAnswer: 2
+    - ask: 2 ask
+      answers:
+      - 11
+      - 22
+      - 33
+      - 44
+      trueAnswer: 4
+  - gameState: 2
+    asksAndAnswers:
+    - ask: 1 ask
+      answers:
+      - 1
+      - 2
+      - 3
+      - 4
+      trueAnswer: 2
+    - ask: 2 ask
+      answers:
+      - 11
+      - 22
+      - 33
+      - 44
+      trueAnswer: 4
+  gameStateData: {fileID: 11400000, guid: 13e9770a9040c1747a2acd6b51c46bab, type: 2}
 --- !u!1 &481878897
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +708,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 101.4
+  m_fontSize: 101.35
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -814,7 +940,7 @@ GameObject:
   - component: {fileID: 855388249}
   - component: {fileID: 855388248}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Difficulty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,7 +1283,7 @@ GameObject:
   - component: {fileID: 1430973886}
   - component: {fileID: 1430973885}
   m_Layer: 5
-  m_Name: Noob (1)
+  m_Name: Answer 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1204,7 +1330,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9843137, g: 0.2784314, b: 0.2784314, a: 0}
+    m_NormalColor: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 0}
     m_HighlightedColor: {r: 0.48584908, g: 0.8163037, b: 1, a: 0.78431374}
     m_PressedColor: {r: 0.75, g: 1, b: 0.99793386, a: 0.78431374}
     m_SelectedColor: {r: 0.0047169924, g: 0.5474581, b: 1, a: 1}
@@ -1226,7 +1352,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1430973886}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 182075060}
+        m_TargetAssemblyTypeName: GameSceneController, Assembly-CSharp
+        m_MethodName: AnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1430973886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1429,7 +1567,7 @@ GameObject:
   - component: {fileID: 1595423102}
   - component: {fileID: 1595423101}
   m_Layer: 5
-  m_Name: Body
+  m_Name: Ask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1501,7 +1639,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 127.85
+  m_fontSize: 127.8
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1635,7 +1773,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 73.65
+  m_fontSize: 73.6
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1769,7 +1907,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 101.35
+  m_fontSize: 101.3
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2185,7 +2323,7 @@ GameObject:
   - component: {fileID: 2105169575}
   - component: {fileID: 2105169574}
   m_Layer: 5
-  m_Name: Noob
+  m_Name: Answer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2232,7 +2370,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.9843137, g: 0.2784314, b: 0.2784314, a: 0}
+    m_NormalColor: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 0}
     m_HighlightedColor: {r: 0.48584908, g: 0.8163037, b: 1, a: 0.78431374}
     m_PressedColor: {r: 0.75, g: 1, b: 0.99793386, a: 0.78431374}
     m_SelectedColor: {r: 0.0047169924, g: 0.5474581, b: 1, a: 1}
@@ -2254,7 +2392,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2105169575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 182075060}
+        m_TargetAssemblyTypeName: GameSceneController, Assembly-CSharp
+        m_MethodName: AnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2105169575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2299,6 +2449,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1839374819}
   - {fileID: 1936690931}
+  - {fileID: 182075059}
   - {fileID: 630653731}
   - {fileID: 1301563681}
   - {fileID: 549613133}

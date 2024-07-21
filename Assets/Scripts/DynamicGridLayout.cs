@@ -3,8 +3,8 @@ using TMPro;
 
 public class DynamicGridLayout : MonoBehaviour
 {
-    public GameObject group16x9, group9x16, button;
-    public TextMeshProUGUI textMeshPro;
+    [SerializeField] GameObject group16x9, group9x16, blackPanel;
+    [SerializeField] private TextMeshProUGUI text;
 
     void Update() => AdjustLayout();
 
@@ -14,21 +14,23 @@ public class DynamicGridLayout : MonoBehaviour
         
         if (aspectRatio > 1.0f)
         {
-            textMeshPro.fontSizeMax = 74;
-            //button.GetComponent<RectTransform>().sizeDelta = new Vector2 (800, 180);
-            //button.GetComponent<RectTransform>().localPosition = new Vector2 (0, -190);
-            button.GetComponent<RectTransform>().offsetMin = new Vector2 (20, 20);
-            group16x9.SetActive(true);
-            group9x16.SetActive(false);
+            if (text) text.fontSizeMax = 74;
+            if (blackPanel) blackPanel.GetComponent<RectTransform>().localScale = new Vector2 (0.8f, 0.8f);
+            if (group16x9 && group9x16)
+            {
+                group16x9.SetActive(true);
+                group9x16.SetActive(false);
+            }
         }
         else
         {
-            textMeshPro.fontSizeMax = 100;
-            //button.GetComponent<RectTransform>().sizeDelta = new Vector2 (1600, 300);
-            //button.GetComponent<RectTransform>().localPosition = new Vector2 (0, -500);
-            button.GetComponent<RectTransform>().offsetMin = new Vector2 (250, 100);
-            group16x9.SetActive(false);
-            group9x16.SetActive(true);
+            if (blackPanel) blackPanel.GetComponent<RectTransform>().localScale = new Vector2 (0.95f, 0.95f);
+            if (text) text.fontSizeMax = 100;
+            if (group16x9 && group9x16)
+            {
+                group16x9.SetActive(false);
+                group9x16.SetActive(true);
+            }
         }
     }
 }
