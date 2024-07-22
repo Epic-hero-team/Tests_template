@@ -15,7 +15,7 @@ public class DynamicGridLayout : MonoBehaviour
         if (aspectRatio > 1.0f)
         {
             if (text) text.fontSizeMax = 74;
-            if (blackPanel) blackPanel.GetComponent<RectTransform>().localScale = new Vector2 (0.8f, 0.8f);
+            if (blackPanel) blackPanel.GetComponent<RectTransform>().localScale = new Vector2 (0.6f, 0.6f);
             if (group16x9 && group9x16)
             {
                 group16x9.SetActive(true);
