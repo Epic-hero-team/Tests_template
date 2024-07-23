@@ -8,10 +8,10 @@ public class GameStateData : ScriptableObject
     
     public enum GameState
     {
-        Noob,
-        Beginner,
-        Advanced,
-        Professional,
-        Expert
+        Нуб,
+        Начинающий,
+        Продвинутый,
+        Профессионал,
+        Эксперт
     }
 }

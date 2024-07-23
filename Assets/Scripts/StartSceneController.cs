@@ -9,14 +9,14 @@ public class StartSceneController : MonoBehaviour
     
     void Start()
     {
-        SetGameState(GameStateData.GameState.Noob);
+        SetGameState(GameStateData.GameState.Нуб);
         gameStateData.countTrueAnsw = 0;
     }
 
     void SetGameState(GameStateData.GameState newState)
     {
         gameStateData.currentState = newState;
-        buttonText.text = "Start test as " + newState;
+        buttonText.text = "Начать тест как " + newState;
         Debug.Log(newState);
     }
 

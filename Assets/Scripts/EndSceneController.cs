@@ -9,17 +9,17 @@ public class EndSceneController : MonoBehaviour
 
     void Start()
     {
-        count.text = gameStateData.countTrueAnsw + "/20";
-        
-        if (gameStateData.countTrueAnsw == 20) text.text = "Great! You answered all the questions correctly and deserve the title " +
-                                                           $"of {gameStateData.currentState}! In any case, you can try to take other tests.";
-        
-        else if (gameStateData.countTrueAnsw > 15) text.text = $"Good! You're already close to being a {gameStateData.currentState}! Keep up the good work and you can try again!";
-        else if (gameStateData.countTrueAnsw > 5) text.text = $"Not bad, but you still have a lot to learn for the title of {gameStateData.currentState}. " +
-                                                              $"Keep up the good work and you can try again!";
-        else text.text = $"You are still a long way from becoming a {gameStateData.currentState}! Practice more and try again.";
-    }
+        count.text = gameStateData.countTrueAnsw + "/10";
     
+        if (gameStateData.countTrueAnsw == 10) text.text = "Отлично! Вы ответили на все вопросы правильно и заслуживаете звание " +
+                                                           $"{gameStateData.currentState}! В любом случае, вы можете попробовать пройти другие тесты.";
+    
+        else if (gameStateData.countTrueAnsw > 7) text.text = $"Хорошо! Вы уже близки к званию {gameStateData.currentState}! Продолжайте в том же духе и можете попробовать снова!";
+        else if (gameStateData.countTrueAnsw > 4) text.text = $"Неплохо, но вам еще нужно многому научиться для получения звания {gameStateData.currentState}. " +
+                                                              $"Продолжайте в том же духе и попробуйте снова!";
+        else text.text = $"Вы еще далеки от звания {gameStateData.currentState}! Практикуйтесь больше и попробуйте снова.";
+    }
+
     public void NextScene()
     {
         SceneManager.LoadScene("0 Start Scene");
