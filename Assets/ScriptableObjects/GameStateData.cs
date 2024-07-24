@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameStateData : ScriptableObject
 {
     public GameState currentState;
-    public int countTrueAnsw;
+    public int countTrueAnsw, countAnsw;
     
     public enum GameState
     {
